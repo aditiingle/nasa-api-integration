@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+<main>
+    <div class="apod-body">
+    <h1>Astronomy Picture of the Day</h1>
+
+    <% if (data) { %>
+        <h2><%= data.title %></h2>
+        <p><%= data.date %></p>
+        <div class="container-apod">
+            <div class="image-apod apod-item"><img src="<%= data.url %>" alt="APOD" width="600" /></div>
+            <div class="text-apod apod-item"><p><%= data.explanation %></p></div>
+        </div>
+    <% } else { %>
+        <p><%= error %></p>
+    <% } %>
+
+    <a href="/" class="button">Go back</a>
+    </div>
+</main>
+<%- include('partials/footer') %>
