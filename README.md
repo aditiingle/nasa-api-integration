@@ -1,7 +1,7 @@
 # nasa-api-integration
 This project is a web application that displays NASA's Astronomy Picture of the Day (APOD) using the NASA API. Built with Express.js, EJS, and Axios, the app dynamically retrieves and showcases daily space images with detailed descriptions. It features a user-friendly interface styled with CSS and serves static assets from a public folder, displaying images from NASA’s collection.
 
-![Preview of my website](#home.png)
+![Preview of my website](home.png)
 
 ## Getting Started
 
