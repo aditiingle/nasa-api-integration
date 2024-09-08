@@ -22,7 +22,7 @@ app.get('/about', (req, res) => {
 
 // Define the route for the NASA APOD (Astronomy Picture of the Day) page
 app.get('/nasa-apod', async (req, res) => {
-    const apiKey = '9mqsGIdsFTWXbNibbMYyrM0yUNYhwEiu6iGsSFk5'; // To the user: Add your NASA API key here
+    const apiKey = process.env.NASA_API_KEY; // To the user: Add your NASA API key here
     const apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`; // // NASA API endpoint URL
 
     try {
